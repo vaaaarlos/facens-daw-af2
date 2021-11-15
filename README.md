@@ -1,5 +1,13 @@
 # cp109-af1-190715
 
+Screenshot:
+
+<div align="center">
+  <img src="./.github/screenshot.png" alt="screenshot" style="align:center; width:100%; max-width:640px;"/>
+</div>
+
+---
+
 ## Project setup
 ```
 npm install
