@@ -1,9 +1,9 @@
 <template>
-  <hello-world />
+  <hello-world height="100%"/>
 </template>
 
 <script>
-import HelloWorld from '../components/HelloWorld';
+import HelloWorld from '@/components/HelloWorld.vue';
 
 export default {
   name: 'Home',
