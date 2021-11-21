@@ -3,7 +3,7 @@
     <v-main>
       <app-header />
 
-      <v-card height="100%">
+      <v-card style="height: calc(100vh - 198px);">
         <app-drawer />
         <router-view />
       </v-card>
