@@ -3,9 +3,11 @@
     <v-main>
       <app-header />
 
-      <v-card style="height: calc(100vh - 198px);">
+      <v-card style="height: calc(100vh - 182px)">
         <app-drawer />
-        <router-view />
+        <div class="content">
+          <router-view></router-view>
+        </div>
       </v-card>
 
       <app-footer />
@@ -14,14 +16,14 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue';
+import Header from '@/components/Header.vue';
 import Navdrawer from '@/components/Navdrawer.vue';
 import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
-    'app-header': Navbar,
+    'app-header': Header,
     'app-drawer': Navdrawer,
     'app-footer': Footer,
   },
@@ -31,3 +33,16 @@ export default {
   }),
 };
 </script>
+
+<style>
+.content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  width: calc(100vw - 273px);
+  margin-left: 256px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+</style>

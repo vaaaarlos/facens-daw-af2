@@ -1,15 +1,15 @@
 <template>
-  <hello-world height="100%"/>
+  <content-home height="100%"/>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue';
+import ContentHome from '@/components/ContentHome.vue';
 
 export default {
   name: 'Home',
 
   components: {
-    HelloWorld,
+    ContentHome,
   },
 };
 </script>
